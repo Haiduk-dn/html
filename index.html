@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stickerz</title>
         <link rel="icon" href="img/baby-yoda.svg">
+        <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
@@ -21,66 +22,70 @@
                     <a href="cart.html ">Cart</a>
                 </div>
             </nav>
-            <section>
-                <h1>Welcome to <br>Stickerz</h1>
-                <p class="subheading">Best stickerz in the world!</p>
-                <hr>
-                <p class="dascount-notice"> Buy with discount todey!</p>
+            <section class="banner">
+                <h1>Stickerz</h1>
                 <a href="#products" class="button">Buy now</a>
             </section>
 
         </header>
         <main>
            <h2 id="products">Products</h2>
-            <div class="produkt list">
+            <div class="product-list">
                 <article class="product">
                     <img src="img/baby-yoda.svg" alt="baby Yoda">
                     <h3>Baby Yoda</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel expedita suscipit dicta voluptates vero, facere laboriosam error ab. Non, animi neque dolore corrupti quis labore nesciunt itaque ipsa ut!</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
+                    </div>   
+                </article>     
             <article class="product">
                     <img src="img/banana.svg" alt="banana">
                     <h3>Banana</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel expedita suscipit dicta voluptates vero, facere laboriosam error ab. Non, animi neque dolore corrupti quis labore nesciunt itaque ipsa ut!</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
+                    </div>    
+            </article>    
             <article class="product">
                     <img src="img/girl.svg" alt="girl">
                     <h3>Girl</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel expedita suscipit dicta voluptates vero, facere laboriosam error ab. Non, animi neque dolore corrupti quis labore nesciunt itaque ipsa ut!</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>
+                    </div>    
+            </article>    
             <article class="product">
                     <img src="img/viking.svg" alt="viking">
                     <h3>viking</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel expedita suscipit dicta voluptates vero, facere laboriosam error ab. Non, animi neque dolore corrupti quis labore nesciunt itaque ipsa ut!</p>
                     <div class="buttons">
-                        <button>Info</button>
-                        <button>Buy</button>                                    
+                        <button class="button card-button">Info</button>
+                        <button class="button card-button">Buy</button>                                    
                     </div>
-
                 </article>
             </div>
         </main>
 
         <footer>
             <h2>Contacts</h2>
-            <form action="" method="POST">
-                <label>
+            <form class="contact-form" action="" method="POST">
+                <label for="user-name">
                     Your name:
-                <input type="text" name="user-name" placeholder ="your name">
-                </label>
+                </label>    
+                <input id="user-name" type="text" name="user-name" placeholder ="your name">
+                
                 <br>
-                <label>
+                <label for="user-email">
                     Your email:
-                <input type="email" name="user-mail" placeholder ="your email" required>
-                </label>
+                </label>    
+                <input id="user-email" type="email" name="user-email" placeholder ="your email" required>
+                
                 <br>
-                <input type="submit">
+                <input class="button card-button" type="submit">
 
             </form>
 
